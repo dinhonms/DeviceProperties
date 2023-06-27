@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		77368F312A4B0276005455BD /* DeviceProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 77368F302A4B0276005455BD /* DeviceProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77368F382A4B0286005455BD /* DeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77368F372A4B0286005455BD /* DeviceProperties.swift */; };
+		77368F3A2A4B02A8005455BD /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77368F392A4B02A8005455BD /* UnityBridge.swift */; };
+		77368F3C2A4B121F005455BD /* BridgeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77368F3B2A4B121F005455BD /* BridgeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77368F2D2A4B0276005455BD /* DeviceProperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceProperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77368F302A4B0276005455BD /* DeviceProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceProperties.h; sourceTree = "<group>"; };
+		77368F372A4B0286005455BD /* DeviceProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
+		77368F392A4B02A8005455BD /* UnityBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
+		77368F3B2A4B121F005455BD /* BridgeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				77368F302A4B0276005455BD /* DeviceProperties.h */,
+				77368F372A4B0286005455BD /* DeviceProperties.swift */,
+				77368F392A4B02A8005455BD /* UnityBridge.swift */,
+				77368F3B2A4B121F005455BD /* BridgeHelper.swift */,
 			);
 			path = DeviceProperties;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 				TargetAttributes = {
 					77368F2C2A4B0276005455BD = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -129,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77368F3A2A4B02A8005455BD /* UnityBridge.swift in Sources */,
+				77368F3C2A4B121F005455BD /* BridgeHelper.swift in Sources */,
+				77368F382A4B0286005455BD /* DeviceProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 		77368F352A4B0276005455BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +294,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +303,7 @@
 		77368F362A4B0276005455BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
